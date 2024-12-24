@@ -179,6 +179,220 @@ public class Solution {
 }
 ```
 ---
-8. 
+8. Ninja was very fond of patterns. For a given integer ‘N’, he wants to make the N-Star Rotated Triangle.
 
+Example:
+Input: ‘N’ = 3
 
+Output: 
+```
+*
+**
+***
+**
+*
+```
+
+```java 
+public class Solution {
+    public static void nStarTriangle(int n) {
+for(int i=0;i<n;i++){
+    for(int j=0;j<=i;j++){
+        System.out.print("*");
+    }
+    System.out.println();
+}
+for(int k= n-1;k>0;k--){
+    for(int j=0;j<k;j++){
+        System.out.print("*");
+    }
+    System.out.println();
+}
+    }
+}
+```
+---
+9. Aryan and his friends are very fond of the pattern. For a given integer ‘N’, they want to make the N-Binary Number Triangle.
+
+You are required to print the pattern as shown in the examples below.
+
+Example:
+Input: ‘N’ = 3
+
+Output: 
+
+1
+0 1
+1 0 1
+
+```java
+public class Solution {
+public static void nBinaryTriangle(int n) {
+    for (int i = 1; i <= n; i++) { 
+        int start = (i % 2 == 0) ? 0 : 1; 
+        for (int j = 0; j < i; j++) { 
+            System.out.print(start + " "); 
+            start = 1 - start; 
+        }
+        System.out.println(); 
+        }
+}
+}
+```
+---
+10. Ninja has been given a task to print the required star pattern and he asked your help for the same.
+
+You must return an ‘N’*’N’ matrix corresponding to the given star pattern.
+
+Example:
+Input: ‘N’ = 4
+
+Output: 
+```
+****
+*  *
+*  *
+****
+```
+
+```java
+public class Solution {
+    public static void getStarPattern(int n) {
+       for(int i=0;i<n;i++){
+               for(int j=0;j<n;j++){
+                    if(i==0 || i==(n-1) || j==0 || j==(n-1)){
+                   System.out.print("*");
+               }
+               else{
+                   System.out.print(" ");
+               }
+           }
+           System.out.println();
+       }
+    }
+}
+```
+
+---
+11. Aryan and his friends are very fond of the pattern. They want to make the Reverse N-Number Crown for a given integer' N'.
+
+Given 'N', print the corresponding pattern.
+
+Example:
+Input: ‘N’ = 3
+
+Output: 
+
+1         1
+1 2     2 1
+1 2 3 3 2 1
+
+```java 
+public class Solution {
+    public static void numberCrown(int n) {
+       for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            int spaces = 2 * (n - i);
+            for (int j = 1; j <= spaces; j++) {
+                System.out.print("  ");
+            }
+        for (int j = i; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+
+            System.out.println();
+        }
+    }}
+```
+---
+12. Floyd's triangle
+Input: ‘N’ = 3
+
+Output: 
+
+1
+2 3
+4 5 6
+
+```java
+public class Solution {
+    public static void nNumberTriangle(int n) {
+        int num = 1;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(num++ +" ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+---
+13. Input: ‘N’ = 3
+
+Output: 
+
+A
+A B
+A B C
+
+```java
+public class Solution {
+    public static void nLetterTriangle(int n) {
+        char ch='A';
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print((char)(ch+j) +" ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+---
+14. Input: ‘N’ = 3
+
+Output: 
+
+A B C
+A B
+A
+
+```java
+public class Solution {
+    public static void nLetterTriangle(int n) {
+       char chh='A';
+       for(int i=n;i>0;i--){
+for(int j=0;j<i;j++){
+    System.out.print((char)(chh+j)+" ");
+}
+System.out.println();
+       }
+    }
+}
+```
+---
+15. Input: ‘N’ = 3
+
+Output: 
+A
+B B
+C C C
+
+```java
+public class Solution {
+    public static void alphaRamp(int n) {
+        char ch='A';
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print((char)(ch+i)+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+16. 
