@@ -33,6 +33,5 @@
 }
 }
 ```
-
 1. The outer loop ensures that each pass sorts one element into its correct position at the end of the unsorted portion.
 2. The inner loop performs comparisons and swaps only within the unsorted portion of the array.
