@@ -508,4 +508,56 @@ public class Main {
 }
 ```
 ---
-25. 
+25. Find if it is a Perfect Number or not. (The factor of the given number is summed)
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        int sum=0;
+        int num = input.nextInt();
+        for(int i=1;i<=num/2;i++){
+          if(num%i==0){
+            sum+=i;
+          }
+        }
+        if(sum==num)
+        System.out.print("It's perfect number");
+        else 
+        System.out.print("Not a perfect number");
+        input.close();
+    }
+}
+```
+---
+26. Print the prime factor of the number.
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        for(int i=2;i<=num;i++){
+          if(num%i==0 && isPrime(i))
+          System.out.print(i+" is the prime factor\n");
+        }
+         input.close();
+    }
+    
+        public static boolean isPrime(int num) {
+          if (num<=1) 
+          return false;
+        for(int i=2;i<=Math.sqrt(num);i++){
+          if(num%i==0)
+          return false;
+        }
+        return true;
+       
+    }
+}
+```
+---
+27. 
