@@ -379,4 +379,133 @@ public class Main {
 }
 ```
 ---
-20. 
+20. The product of the digits in a given number
+
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      int num = input.nextInt();
+      int product = 1;
+      while(num!=0){
+        int remi = num%10;
+        product*=remi;
+        num/=10;
+      }
+      System.out.print(product);
+  }
+}
+```
+---
+21. Print the digital sum of the number.
+//The digital sum of 1234 is 1 + 2 + 3 + 4 = 10. Since 10 is a two-digit number, you repeat the process: 1 + 0 = 1. So, the digital sum of 1234 is 1.
+The digital sum of 456 is 4 + 5 + 6 = 15. Since 15 is a two-digit number, you repeat the process: 1 + 5 = 6. So, the digital sum of 456 is 6.
+
+```java 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        int sum = 0;
+        while (num > 0 || sum > 9) {
+            if (num == 0) {
+                num = sum;
+                sum = 0;
+            }
+            sum += num % 10; 
+            num /= 10;       
+        }
+        System.out.println("Digital sum: " + sum);
+    }
+}
+```
+---
+22. Print the Narcissistic number. 
+
+```java
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        int rev = 0;
+        int count = 0;
+        int sum =0;
+        int temp = num;
+        while(temp!=0){
+          int rem = temp%10;
+          count++;
+          temp/=10;
+        }
+        temp=num;
+        while(temp!=0){
+         int rem = temp%10;
+         sum += (int)Math.pow(rem,count);
+         temp/=10;
+        }
+        System.out.println("result: " + sum);
+    }
+}
+```
+---
+23. How to find the next 5 palindromes of a given number?
+
+```java
+import java.util.*;
+public class Main{
+  public static boolean isPalindrome(int num){
+    int temp = num;
+    int rev = 0;
+    while(temp!=0){
+      int rem = temp%10;
+      rev = rev*10 + rem;
+      temp/=10;
+    }
+    return num == rev;
+  }
+  public static void main(String args[]){
+       Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+    int count = 0;
+    while(count<5){
+      num++;
+      if(isPalindrome(num)){
+        System.out.print(num+" ");
+        count++;
+      }
+    }
+  }
+}
+```
+---
+24. Swap th first and last digit of a number and print the num after modification.
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        int temp = num;
+        int last = temp % 10;  
+        int first = 0;
+        int divisor = 1;
+        while (temp >= 10) {
+            temp /= 10;
+            divisor *= 10;
+        }
+        first = temp;  
+        int swappedNum = (last * divisor) + (num % divisor - last + first);
+        System.out.println("The last and first digit got swapped: " + swappedNum);
+        input.close();
+    }
+}
+```
+---
+25. 
