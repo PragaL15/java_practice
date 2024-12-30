@@ -328,4 +328,55 @@ public class Main {
 }
 ```
 ---
-18. 
+18. Find the abundant number it means if given number' divisor's are summed and check if it is greater that the given num. If so then it's a abundant number.
+
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      int num = input.nextInt();
+      int sum =0;
+      for(int i=1;i<=num/2;i++){
+        if(num%i==0){
+          sum+=i;
+        }
+      }
+      if(num<sum)
+     System.out.print("It's abundant num");
+     else
+     System.out.print("It's not abundant num");
+  }
+}
+```
+---
+19. Check if the number is Automorphic number or not (25^2 = 625 and 25 comes into the square)
+
+```java
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      int num = input.nextInt();
+      int digit =0;
+      int square = num * num;
+      int temp = num;
+      boolean isAutomorphic = true;
+      while (temp > 0) {
+            if (temp % 10 != square % 10) {
+                isAutomorphic = false;
+                break;
+            }
+            temp /= 10;
+            square /= 10;
+        }
+        if (isAutomorphic) 
+            System.out.println(num + " is an Automorphic number.");
+        else 
+            System.out.println(num + " is not an Automorphic number.");
+        
+  }
+}
+```
+---
+20. 
