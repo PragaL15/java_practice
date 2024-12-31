@@ -560,4 +560,32 @@ public class Main {
 }
 ```
 ---
-27. 
+27. Sum the digits other that first and last digits of the number.
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        int sum =0;
+        int temp = num;
+        int count = 0;
+        int first =0;
+        int last = num%10;
+        while(temp != 0){
+          count++;
+          int rem = temp%10;
+          first = rem;
+          sum+=rem;
+          temp/=10;
+        }
+        int first_sum = first+last;
+        System.out.print(Math.abs(sum-first_sum));
+       
+    }
+}
+```
+---
+28. 
