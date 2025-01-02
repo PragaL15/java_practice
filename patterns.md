@@ -3,9 +3,11 @@
 1. Example:
 Input:  ‘N’ = 3
 Output: 
+```
 * 
 * *
 * * *
+```
 
 ```java
 public class Solution {
@@ -30,9 +32,11 @@ Example:
 Input: ‘N’ = 3
 
 Output: 
+```
 1
 1 2 
 1 2 3
+```
 
 ```java
 public class Solution {
@@ -57,9 +61,11 @@ Example:
 Input: ‘N’ = 3
 
 Output: 
+```
 1
 2 2 
 3 3 3
+```
 
 ```java
 public class Solution {
@@ -107,10 +113,11 @@ Example:
 Input: ‘N’ = 3
 
 Output: 
-
+```
 1 2 3
 1 2
 1
+```
 
 ```java
 public class Solution {
@@ -220,11 +227,11 @@ Example:
 Input: ‘N’ = 3
 
 Output: 
-
+```
 1
 0 1
 1 0 1
-
+```
 ```java
 public class Solution {
 public static void nBinaryTriangle(int n) {
@@ -282,10 +289,11 @@ Example:
 Input: ‘N’ = 3
 
 Output: 
-
+```
 1         1
 1 2     2 1
 1 2 3 3 2 1
+```
 
 ```java 
 public class Solution {
@@ -311,11 +319,11 @@ public class Solution {
 Input: ‘N’ = 3
 
 Output: 
-
+```
 1
 2 3
 4 5 6
-
+```
 ```java
 public class Solution {
     public static void nNumberTriangle(int n) {
@@ -334,10 +342,11 @@ public class Solution {
 13. Input: ‘N’ = 3
 
 Output: 
-
+```
 A
 A B
 A B C
+```
 
 ```java
 public class Solution {
@@ -356,10 +365,11 @@ public class Solution {
 14. Input: ‘N’ = 3
 
 Output: 
-
+```
 A B C
 A B
 A
+```
 
 ```java
 public class Solution {
@@ -377,10 +387,12 @@ System.out.println();
 ---
 15. Input: ‘N’ = 3
 
-Output: 
+Output:
+``` 
 A
 B B
 C C C
+```
 
 ```java
 public class Solution {
@@ -395,4 +407,14 @@ public class Solution {
     }
 }
 ```
-16. 
+16. Mirrored right angle triangle
+
+```
+     *
+    **
+   ***
+  ****
+ *****
+```
+
+```java
