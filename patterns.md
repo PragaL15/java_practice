@@ -418,3 +418,184 @@ public class Solution {
 ```
 
 ```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int row = input.nextInt();
+        for(int i=1;i<=row;i++){
+          for(int j=0;j<=row-i;j++){
+              System.out.print(" ");
+            }
+            for(int k =1;k<=i;k++){
+              System.out.print("*");
+            }
+        System.out.println();
+}
+    }
+}
+```
+17. Hollow right angle triangle
+
+```
+      *
+     **
+    * *
+   *  *
+  *   *
+ ******
+ ```
+ ```java
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int row = input.nextInt();
+        for(int i=1;i<=row;i++){
+          for(int j=0;j<=row-i;j++){
+              System.out.print(" ");
+          }
+            for(int k =1;k<=i;k++){
+              if(i==row || k==i ||k==1 )
+              System.out.print("*");
+              else 
+              System.out.print(" ");
+            }
+      
+        System.out.println();
+}
+    }
+}
+```
+---
+18. Normal hallow rigth angle triangle
+```
+*
+**
+* *
+*  *
+*   *
+******
+```
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int row = input.nextInt();
+        for(int i=0;i<=row;i++){
+            for(int k =1;k<=i;k++){
+              if(i==row || k==i ||k==1 )
+              System.out.print("*");
+              else 
+              System.out.print(" ");
+            }
+        System.out.println();
+}
+    }
+}
+```
+---
+19. Hollow pyramid triangle
+```
+      *      
+     * *     
+    *   *    
+   *     *   
+  *       *  
+ *         * 
+*************
+```
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        for(int i=0;i<=n;i++){
+          for(int j=0;j<=n-i-1;j++){
+            System.out.print(" ");
+          }
+            for(int k =1;k<=2*i+1;k++){
+              if(k==1 || k==2*i+1 || i==n)
+              System.out.print("*");
+              else 
+              System.out.print(" ");
+            }
+             for(int j=0;j<=n-i-1;j++){
+            System.out.print(" ");
+          }
+        System.out.println();
+}
+    }
+}
+```
+---
+20. Left arrow star pattern
+```
+***
+**
+*
+*
+**
+***
+```
+```java 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+
+        for (int i = n; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+---
+21. X-cross pattern
+```
+*   *
+ * * 
+  *  
+ * * 
+*   *
+```
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt(); 
+
+        for (int i = 1; i <= n; i++) { 
+            for (int j = 1; j <= n; j++) {
+                if (j == i || j == n - i + 1) { 
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println(); 
+        }
+    }
+}
+```
+---
+22. 
