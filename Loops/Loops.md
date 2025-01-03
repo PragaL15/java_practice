@@ -1000,4 +1000,37 @@ public class main{
 }
 ```
 ---
+41. If the leap years and non-leap years in next 10 yrs.
 
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int year = input.nextInt();
+
+        if (year > 0) {
+            System.out.print("Leap years: ");
+            for (int i = year + 1; i <= year + 10; i++) {
+                if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
+                    System.out.print(i + " ");
+                }
+            }
+            System.out.println();
+
+            System.out.print("Non-leap years: ");
+           for (int j = year + 1; j <= year + 10; j++) {
+                if (!((j % 4 == 0 && j % 100 != 0) || (j % 400 == 0))) {
+                    System.out.print(j + " ");
+                }
+            }
+            System.out.println();
+        } else {
+            System.out.print("Invalid year");
+        }
+    }
+}
+```
+---
+42. 
