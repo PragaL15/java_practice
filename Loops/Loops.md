@@ -944,7 +944,7 @@ public class Main {
 39. To find if the gvn num is strong number or not.
  ex: 145 is strong as 1!+4!+5! = 145.
 
- ```java
+```java
  import java.util.*;
  public class main{
   public static int factorial(int n){
@@ -970,14 +970,13 @@ public class Main {
       System.out.print("False");
 }
 }
-
 ```
 ---
 40. To check whether the number is Prime number or not.
 
 ```java
 import java.util.*;
-public class main{
+public class Main{
   public static boolean isPrime(int n){
     if(n<=1)
     return false;
@@ -1033,4 +1032,64 @@ public class Main {
 }
 ```
 ---
-42. 
+42. Harmonic series sum and display the elements.
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        if(num<=0)
+        {
+          System.out.print("num must be greater than 0");
+          return;
+        }
+        double harmonic = 0.0;
+        double harmonicSum = 0.0;
+        for(int i=1;i<=num;i++){
+          harmonic=1.0/i;
+          harmonicSum+=harmonic;
+          System.out.printf("%.2f ",harmonic);
+        }
+        System.out.printf("\n%.2f",harmonicSum);
+    }
+}
+```
+---
+43. Print a pattern with only prime numbers.
+
+```java
+import java.util.*;
+public class Main {
+  public static Boolean isPrime(int n){
+    if(n<2)
+    return false;
+    for(int i=2;i<=Math.sqrt(n);i++){
+      if(n%i==0)
+      return false;
+    }
+    return true;
+  }
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int row = input.nextInt();
+        int num = 2;
+        int count =0;
+        for(int i=1;i<=row;i++){
+          for(int j=1;j<=i;j++){
+            while(!isPrime(num)){
+              num++;
+            }
+            System.out.print(num+" ");
+            num++;
+          }
+          System.out.println();
+        }
+        
+ }
+}
+```
+---
+44. 
