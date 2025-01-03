@@ -447,8 +447,8 @@ public class Main {
  ******
  ```
  ```java
- import java.util.Scanner;
 
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -463,9 +463,8 @@ public class Main {
               else 
               System.out.print(" ");
             }
-      
         System.out.println();
-}
+       }
     }
 }
 ```
@@ -481,7 +480,6 @@ public class Main {
 ```
 ```java
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -494,7 +492,7 @@ public class Main {
               System.out.print(" ");
             }
         System.out.println();
-}
+       }
     }
 }
 ```
@@ -546,12 +544,10 @@ public class Main {
 ```
 ```java 
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-
         for (int i = n; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 System.out.print("*");
