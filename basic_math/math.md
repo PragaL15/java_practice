@@ -23,4 +23,7 @@ public class IntegerToRoman {
 - In this we are using `StringBuilder` instead of geting input via `Scanner.getInput` as string is `immutable` so, everytime we append a string a new memory will be created and that will lead to high consumption of memory , so to avoid that we are using `StringBuilt` as it's mutable.
 
 ---
+###### Note - `Integer.MIN_VALUE` is -2^31 and `Integer.MAX_VALUE` is 2^31 - 1.
+---
+
 2. 
