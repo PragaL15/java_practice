@@ -26,4 +26,16 @@ public class IntegerToRoman {
 ###### Note - `Integer.MIN_VALUE` is -2^31 and `Integer.MAX_VALUE` is 2^31 - 1.
 ---
 
-2. 
+2. Given an integer n, return true if it is a power of two. Otherwise, return false.
+An integer n is a power of two, if there exists an integer x such that n == 2x.
+
+```java
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if(n<=0)
+        return false;
+        return (n & (n - 1)) == 0;
+    }
+} 
+```
+3. 
