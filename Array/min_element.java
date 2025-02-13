@@ -1,4 +1,4 @@
-// Program to find the minimum (or maximum) element of an array
+
 import java.util.*;
 public class min_element {
   public static void main(String[] args){
