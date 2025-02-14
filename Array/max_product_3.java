@@ -1,4 +1,5 @@
 //Maximum product of a triplet (subsequence of size 3) in array
+
 import java.util.*;
 import java.lang.Math;
 public class max_product_3 {
