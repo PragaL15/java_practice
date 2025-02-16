@@ -53,5 +53,4 @@ numbersList.add(10);
 numbersList.add(20);
 System.out.println(numbersList.get(0)); 
 ```
-
 5. 
