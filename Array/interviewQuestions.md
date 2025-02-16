@@ -21,8 +21,6 @@ int[] values = {10, 20, 30, 40, 50};
 
 4. What is the difference between an array and an ArrayList?
 
-- 
-
 | Feature         | **Array** | **ArrayList** |
 |----------------|----------|--------------|
 | **Size** | Fixed size (defined at creation) | Dynamic size (resizable) |
