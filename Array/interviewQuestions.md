@@ -5,7 +5,7 @@
 - An array in Java is a collection of elements of the same data type stored in contiguous memory locations. It provides a way to store multiple values in a single variable.
 
 2. How do you declare and initialize an array in Java?
-- 
+
 ```Java
 
 int[] numbers;  
