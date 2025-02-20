@@ -51,4 +51,15 @@ numbersList.add(10);
 numbersList.add(20);
 System.out.println(numbersList.get(0)); 
 ```
-5. 
+5. What is Hashset?
+- HashSet is a collection in Java that stores unique elements and allows fast operations (insertion, deletion, and lookup).
+ - Key features are , 
+    - No Duplicates – It does not allow duplicate elements.
+    - Unordered Collection – It does not maintain insertion order.
+    - Uses Hashing – Internally, it uses a hash table for fast access.
+    - Allows null Value – Can store one null element.
+    - No Indexing – Unlike ArrayList, it does not have an index.
+
+---
+
+6. 
